@@ -27,11 +27,32 @@ p {
     position: relative;
 }
 
+.section-title-feedback {
+    color: #4070f4;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-title-feedback::after {
+    position: absolute;
+    content: "";
+    width: 190px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 3rem;
+    background-color: #4070f4;
+}
+
 .section-title::after {
     position: absolute;
     content: "";
-    width: 100px;
-    height: 0.18rem;
+    width: 150px;
+    height: 2px;
     left: 0;
     right: 0;
     margin: auto;
@@ -536,22 +557,12 @@ h2 {
 /* === CONTATO === */
 
 .contato-form {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 390px;
-}
-
-.contato-input {
     display: block;
-    margin: 1rem 0;
-    padding: 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.822);
-    width: 400px;
+    padding-top: 50px;
     font-weight: bold;
     font-size: 1rem;
-    max-width: 100%;
-    outline: none;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
 .contato-button {

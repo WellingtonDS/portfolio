@@ -69,6 +69,12 @@ const sr = ScrollReveal({
     reset: true
 });
 
+/*===== ano copyright dinâmico =====*/
+const ano = document.getElementById("ano");
+  const anoAtual = new Date();
+
+  ano.innerHTML = anoAtual.getFullYear();
+
 /*SCROLL HOME*/
 sr.reveal('.home-title-color',{interval: 300}); 
 sr.reveal('.home-data',{}); 
@@ -130,7 +136,7 @@ sr.reveal('.projeto-text', { interval: 600 });
 sr.reveal('.bg-img', { interval: 800 });
 
 /*SCROLL CONTATO*/
-sr.reveal('.contato-input', { interval: 200 });
+sr.reveal('.contato-form', { interval: 200 });
 sr.reveal('.contato-button', { interval: 300 });
 
 sr.reveal('.section-title', { interval: 200 })

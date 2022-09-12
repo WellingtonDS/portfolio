@@ -192,7 +192,7 @@
 
         <!--===== Feedbacks =====-->
         <section class="feedback section  " id="feedbacks">
-            <h2 class="section-title">FeedBacks</h2>
+            <h2 class="section-title-feedback">FeedBacks</h2>
 
             <div class="feed-container bd-grid">
                 <div>
@@ -227,19 +227,17 @@
             <h2 class="section-title contato">Contato</h2>
 
             <div class="contato-container bd-grid">
-                <form action="https://api.staticforms.xyz/submit" method="POST" class="contato-form">
-                    <input type="hidden" name="accessKey" value="a472832f-928a-48ca-9e93-98a4fc2a938c">
-                    <input type="hidden" name="redirectTo" value="https://github.com/WellingtonDS/portifolio">
-
-
-                    <input type="text" name="name" placeholder="Nome" class="contato-input" required maxlength="25"
-                        minlength="2">
-                    <input type="email" name="email" placeholder="Email" class="contato-input" required maxlength="50">
-                    <textarea name="message" cols="0" rows="10" class="contato-input" required
-                        maxlength="100"></textarea>
-                    <button class="contato-button">Enviar</button>
-                </form>
-
+                    <div class="contato-form">
+                        <ul class="contato-ul">
+                            <li>
+                                <a href="mailto:w_santos1993@outlook.com">w_santos1993@outlook.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:11959175117">Meu telefone</a>
+                            </li>
+                    
+                        </ul>
+                    </div>
             </div>
         </section>
     </main>
@@ -251,8 +249,9 @@
             <a href="https://www.facebook.com/wsantos93" target="_blank" class="footer-icon"><i class='bx bxl-facebook'></i></a>
             <a href="https://www.instagram.com/__wellingtonsantos/" target="_blank" class="footer-icon"><i class='bx bxl-instagram'></i></a>
             <a href="https://twitter.com/Wellington93s" target="_blank" class="footer-icon"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/wsantos1993/" target="_blank" class="home-social-icon"><i class='bx bxl-linkedin'></i></a>
         </div>
-        <p>&#169; 2021 Todos os Direitos Reservados</p>
+        <p>Copyright &#169; <span id="ano"></span> Todos os Direitos Reservados</p>
     </footer>
 
 
