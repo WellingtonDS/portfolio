@@ -105,7 +105,7 @@ sr.reveal('.projetos-img',{interval: 500});
 sr.reveal('.projetos-img',{interval: 600}); 
 
 /*SCROLL FEEDBACK */
-sr.reveal('.feed-container',{interval: 300}); 
+sr.reveal('.section-title-feedback', {interval:200}); 
 sr.reveal('.feed-title',{}); 
 sr.reveal('.feed-img',{delay: 400});
 
