@@ -22,7 +22,7 @@ p {
     color: #4070f4;
     font-family: "poppins", Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
     font-size: 2rem;
     position: relative;
 }
@@ -342,6 +342,11 @@ h2 {
 }
 
 /* === SKILLS === */
+.scroll {
+    overflow: overlay;
+    height: 500px;
+    width: 500px;
+}
 
 .skills-container {
     padding-top: 2rem;
@@ -349,6 +354,7 @@ h2 {
 }
 
 .skills-text{
+    padding: 1em;
     font-size: 1rem;
 }
 
@@ -361,6 +367,19 @@ h2 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.404);
 }
 
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+}
+
 .skills-data {
     display: flex;
     justify-content: space-between;
@@ -368,7 +387,7 @@ h2 {
     position: relative;
     font-weight: bold;
     padding: 0.5rem 1rem;
-    margin: 2rem auto;
+    margin: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
 }

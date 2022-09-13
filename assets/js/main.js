@@ -89,7 +89,7 @@ sr.reveal('.sobre-text',{delay: 400});
 
 /*SCROLL SKILLS*/
 sr.reveal('.skills-title',{}); 
-sr.reveal('.skills-text',{interval:400}); 
+sr.reveal('.skills-text',{interval: 400}); 
 sr.reveal('.skills-data',{interval: 200}); 
 sr.reveal('.skills-img',{delay: 600});
 
@@ -101,8 +101,8 @@ sr.reveal('.bg-img',{interval: 800});
 
 // SCROOL PRPJETOS CARDS
 sr.reveal('.projetos-img',{interval: 400}); 
-//sr.reveal('.projetos-img',{interval: 500}); 
-//sr.reveal('.projetos-img',{interval: 600}); 
+sr.reveal('.projetos-img',{interval: 500}); 
+sr.reveal('.projetos-img',{interval: 600}); 
 
 /*SCROLL FEEDBACK */
 sr.reveal('.feed-container',{interval: 300}); 
