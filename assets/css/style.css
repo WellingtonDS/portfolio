@@ -45,6 +45,9 @@ p {
     top: 3rem;
     background-color: #4070f4;
 }
+.link{
+    color: red;
+} 
 
 .section-title::after {
     position: absolute;
