@@ -71,9 +71,9 @@ const sr = ScrollReveal({
 
 /*===== ano copyright dinâmico =====*/
 const ano = document.getElementById("ano");
-  const anoAtual = new Date();
+const anoAtual = new Date();
 
-  ano.innerHTML = anoAtual.getFullYear();
+ano.innerHTML = anoAtual.getFullYear();
 
 /*SCROLL HOME*/
 sr.reveal('.home-title-color',{interval: 300}); 
