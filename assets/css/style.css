@@ -289,13 +289,13 @@ h2 {
   background-color: #4070f4;
   border-radius: 8px;
   color: white;
-  transition: 0.3s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: white;
-  border: 1px solid #4070f4;
+  border: none;
   color: #4070f4;
 }
 
@@ -323,7 +323,7 @@ h2 {
 
 .home-social i:hover {
   transform: translateY(6px);
-  color: turquoise;
+  color: #4070f4;
 }
 
 @media screen and (min-width: 1024px) {

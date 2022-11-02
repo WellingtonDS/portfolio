@@ -95,19 +95,11 @@ setInterval(function() {
     time.textContent = hours + ":" + minutes + ":" + seconds;
 })
 
-
-/*===== ano copyright dinâmico =====*/
-const ano = document.getElementById("ano");
-const anoAtual = new Date();
-
-ano.innerHTML = anoAtual.getFullYear();
-
 /*SCROLL HOME*/
 sr.reveal('.home-title-color',{interval: 300}); 
 sr.reveal('.home-data',{}); 
 sr.reveal('.home-img',{delay: 400}); 
 sr.reveal('.home-social-icon',{ interval: 100}); 
-
 
 /*SCROLL SOBRE*/
 sr.reveal('.sobre-img',{}); 
@@ -115,18 +107,13 @@ sr.reveal('.sobre-title',{delay: 400});
 sr.reveal('.sobre-text',{delay: 400}); 
 
 /*SCROLL SKILLS*/
+sr.reveal('.scroll',{}); 
 sr.reveal('.skills-title',{}); 
 sr.reveal('.skills-text',{interval: 400}); 
-sr.reveal('.skills-data',{interval: 200}); 
 sr.reveal('.skills-img',{delay: 600});
 
-/*SCROLL PROJETOS*/
-sr.reveal('.projeto-img',{interval: 200}); 
-sr.reveal('.projeto-title',{interval: 400}); 
-sr.reveal('.projeto-text',{interval: 600}); 
-sr.reveal('.bg-img',{interval: 800});
-
 // SCROOL PRPJETOS CARDS
+sr.reveal('.projeto',{interval: 400}); 
 sr.reveal('.projetos-img',{interval: 400}); 
 sr.reveal('.projetos-img',{interval: 500}); 
 sr.reveal('.projetos-img',{interval: 600}); 
@@ -137,37 +124,18 @@ sr.reveal('.feed-title',{});
 sr.reveal('.feed-img',{delay: 400});
 
 /*SCROLL CONTATO*/
-sr.reveal('.contato-input',{interval: 800});
-sr.reveal('.contato-button',{interval: 300});
-
+sr.reveal('.btn-wp',{delay: 600});
+sr.reveal('.btn-email',{delay: 800});
+sr.reveal('.btn-phone',{delay: 1000});
 sr.reveal('.section-title', {interval:200})
-sr.reveal('.home-data', {});
-sr.reveal('.home-img', { delay: 400 });
-sr.reveal('.home-social-icon', { interval: 100 });
-
-/*SCROLL SOBRE*/
-sr.reveal('.sobre-img', {});
-sr.reveal('.sobre-title', { delay: 400 });
-sr.reveal('.sobre-text', { delay: 400 });
-
-/*SCROLL SKILLS*/
-sr.reveal('.skills-title', {});
-sr.reveal('.skills-text', { interval: 400 });
-sr.reveal('.skills-data', { interval: 200 });
-sr.reveal('.skills-img', { delay: 600 });
-
-/*SCROLL PROJETOS*/
-sr.reveal('.projeto-img', { interval: 200 });
-sr.reveal('.projeto-title', { interval: 400 });
-sr.reveal('.projeto-text', { interval: 600 });
-sr.reveal('.bg-img', { interval: 800 });
-
-/*SCROLL CONTATO*/
 sr.reveal('.contato-form', { interval: 200 });
-sr.reveal('.contato-button', { interval: 300 });
-
 sr.reveal('.section-title', { interval: 200 })
 
-
+/* scroll footer */
 sr.reveal('.footer-icon', { interval: 100 })
 
+/*===== ano copyright dinâmico =====*/
+const ano = document.getElementById("ano");
+const anoAtual = new Date();
+
+ano.innerHTML = anoAtual.getFullYear();
