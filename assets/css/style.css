@@ -595,6 +595,8 @@ h2 {
 
 .feed-text {
   font-size: 1rem;
+  width: 500px;
+  display: inline-block;
 }
 
 .feed-cards {

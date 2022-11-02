@@ -121,6 +121,7 @@ sr.reveal('.projetos-img',{interval: 600});
 /*SCROLL FEEDBACK */
 sr.reveal('.section-title-feedback', {interval:200}); 
 sr.reveal('.feed-title',{}); 
+sr.reveal('.feed-text',{interval: 400});
 sr.reveal('.feed-img',{delay: 400});
 
 /*SCROLL CONTATO*/
