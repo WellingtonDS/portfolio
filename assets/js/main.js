@@ -1,5 +1,23 @@
-// === SCROOL SUAVE ===
+// MODAL DE AVISO
 
+function modalAlert() {
+    let modal = document.getElementById('alert');
+
+    modal.style.display = 'block';
+    modal.style.accentColor = 'blue';
+}
+
+setTimeout(() => {
+    modalAlert();
+}, "1000");
+
+function closeModal() {
+    let modal = document.getElementById('alert');
+
+    modal.style.display = 'none';
+}
+
+// === SCROOL SUAVE ===
 const menuItem = document.querySelectorAll('.nav-list a')
 
 menuItem.forEach(item => {
@@ -138,5 +156,4 @@ sr.reveal('.footer-icon', { interval: 100 })
 /*===== ano copyright dinâmico =====*/
 const ano = document.getElementById("ano");
 const anoAtual = new Date();
-
 ano.innerHTML = anoAtual.getFullYear();
