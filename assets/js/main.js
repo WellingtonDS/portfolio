@@ -1,5 +1,4 @@
 // MODAL DE AVISO
-
 function modalAlert() {
     let modal = document.getElementById('alert');
 
@@ -13,7 +12,6 @@ setTimeout(() => {
 
 function closeModal() {
     let modal = document.getElementById('alert');
-
     modal.style.display = 'none';
 }
 
@@ -29,13 +27,10 @@ function scrollToIdOnClick(event) {
     event.preventDefault();
     const to = getScrollTopByHref(event.target) - 80;
 
-
-    scrollToPosition(to)
-
+    scrollToPosition(to);
 };
 
 function scrollToPosition(to) {
-
     window.scroll({
         top: to,
         behavior: "smooth",
@@ -46,9 +41,6 @@ function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
     return document.querySelector(id).offsetTop
 }
-
-
-
 
 /*===== MENU SHOW =====*/
 const showMenu = (toggleId, navId) => {
@@ -87,31 +79,24 @@ const sr = ScrollReveal({
     reset: true
 });
 
-/*===== Horario dinâmico =====*/
-setInterval(function() {
-    const time = document.querySelector("#time");
-    let date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
+// funcao carrossel de certificados
+const imgs = document.getElementById('img-certifield');
+const img = document.querySelectorAll('#img-certifield img');
 
-    if (hours > 12) {
-        hours = hours;
-        if (hours < 10) {
-            hours = "0" + hours;
-        }
+let idx = 0;
+
+function carrosel() {
+    idx++;
+    
+    if (idx > img.length - 1) {
+        idx = 0;
     }
+    
+    imgs.style.transform = `translateX(${-idx * 500}px)`;    
+}
 
-    if (minutes < 10) {
-        minutes = "0" + minutes;
-    }
+setInterval(carrosel, 5000);
 
-    if (seconds < 10) {
-        seconds = "0" + seconds;
-    }
-
-    time.textContent = hours + ":" + minutes + ":" + seconds;
-})
 
 /*SCROLL HOME*/
 sr.reveal('.home-title-color',{interval: 300}); 
@@ -130,17 +115,15 @@ sr.reveal('.skills-title',{});
 sr.reveal('.skills-text',{interval: 400}); 
 sr.reveal('.skills-img',{delay: 600});
 
+// SCROOL certificados
+sr.reveal('.carrossel',{interval: 400}); 
+sr.reveal('.item-img',{interval: 400}); 
+
 // SCROOL PRPJETOS CARDS
 sr.reveal('.projeto',{interval: 400}); 
 sr.reveal('.projetos-img',{interval: 400}); 
 sr.reveal('.projetos-img',{interval: 500}); 
 sr.reveal('.projetos-img',{interval: 600}); 
-
-/*SCROLL FEEDBACK */
-sr.reveal('.section-title-feedback', {interval:200}); 
-sr.reveal('.feed-title',{}); 
-sr.reveal('.feed-text',{interval: 400});
-sr.reveal('.feed-img',{delay: 400});
 
 /*SCROLL CONTATO*/
 sr.reveal('.btn-wp',{delay: 600});

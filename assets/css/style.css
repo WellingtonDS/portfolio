@@ -415,11 +415,28 @@ h2 {
 }
 
 /* certificados */
-.certificado-container {
-  display: table;
-  padding: 20px;
-  margin: 0 auto;
+.carrossel {
+  box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+  overflow: hidden;
+  margin: 10rem auto;
+  width: 500px;
+  background: radial-gradient(black, transparent);
+  box-shadow: 0 4px 25px rgb(14 36 49 / 15%);
+  border-radius: 0.5rem;
 }
+
+#img-certifield {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.img-certificado {
+  width: 500px;
+  margin-left: -2px;
+  padding: 2rem;
+}
+
 .crf-image img {
   background-color: #fff;
   box-shadow: 0 2px 12px rgba(55, 59, 61, 0.15);
